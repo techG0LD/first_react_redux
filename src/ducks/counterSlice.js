@@ -16,7 +16,7 @@ export const counterSlice = createSlice({
             return { value: state.value - 1}
         },
 
-        incrementByAmount: (state, action) => {
+        incrementByAmount: (state, action) => {            //action is the user's input
             return { value: state.value + action.payload}
         }
     }

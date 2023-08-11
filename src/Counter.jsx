@@ -4,7 +4,7 @@ import {useState} from 'react'
 
 export default function Counter(){
      const [input, setInput] = useState('')
-    const count = useSelector((state) => state.value) 
+    const count = useSelector((state) => state.counter.value) 
     const dispatch = useDispatch()
 
     const byAmountSubmit = (e) => {
